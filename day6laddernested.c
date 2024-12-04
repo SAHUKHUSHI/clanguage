@@ -68,10 +68,16 @@ main()
     scanf("%d",&y);
     printf("Enter the value of z:");
     scanf("%d",&z);
-    
-    if(w>x)
+
+    if (w==x && x==y && y==z)
     {
-        if(w>y) 
+        printf("All are equal");
+    }
+    else 
+    {
+        if(w>x)
+        {
+           if(w>y) 
         {
             if(w>z)
             {
@@ -84,39 +90,43 @@ main()
         }
         else
         {
-          if(x>y)
-          {
+          if(y>z)
+        {
+            printf("Y is maximum value");
+        }
+          else
+        {
+            printf("Z is maximum value");
+        }
+        }
+        }
+    else
+    {
+        if (x>y)
+        {
             if(x>z)
             {
                 printf("X is maximum value");
             }
             else
             {
+                printf("Z ia maximum value");
+            }
+        }
+        else    
+        {
+            if (y>z)
+            {
+                printf("Y is maximum value");
+            }
+            else
+            {
                 printf("Z is maximum value");
             }
-          }
         }
     }
-        else if(y>z)
-        {
-            printf("Y is maximum value");
-        }
-        else
-        {
-            printf("Z is maximum value");
-        }
-          if(w==x)
-        {
-            if(x==y)
-            {
-                if(y==z)
-                {
-                    printf("All value are equal");
-                 
-                }
-            }
-        }
-}
-   
+    }
+}            
+    
 
-        
+    
