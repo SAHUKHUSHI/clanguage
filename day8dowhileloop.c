@@ -30,7 +30,7 @@ main()
     while (z<=y);
     
 
-    //4
+    // //4
     int o;
     printf("Enter number:");
     scanf("%d",&o);
@@ -43,4 +43,23 @@ main()
         }
         o--;
     } while(o>=1);
+
+
+    //5 leap year
+
+    int year, year2;
+    printf("Enter year:");
+    scanf("%d",&year);
+    printf("Enter year2 :");
+    scanf("%d",&year2);
+    do
+    {
+        if (year%4==0 && (year%100!=0 || year%400==0))
+        {
+            printf("%d is a leap year\n",year);
+        }
+        year++;
+    }
+    while (year<=year2);
+
 }
