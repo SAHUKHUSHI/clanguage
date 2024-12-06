@@ -1,40 +1,43 @@
 #include<stdio.h>
 main()
 {
-    int a, grade;
+    int a;
+    char grade;
     printf("Enter your score:");
     scanf("%d",&a);
-    grade = 0;
-    (a>=100 && a<=90)?
-    printf("Your grade is A"):
-    (a<=89 && a>=80)?
-    printf("Your grade is B"):
-    (a<=79 && a>=70)?
-    printf("Your grade is C"):
-    (a<=69 && a>=60)?
-    printf("Your grade is D")
-    :printf(".");
-
-    // int b;
-    // printf("\nEnter your grade");
-    // scanf("%d",&b);
+    
+    grade = (a >= 90)? 'A':
+    (a >= 80)? 'B':
+    (a >= 70)? 'C':
+    (a >= 60)? 'D':
+    'E';
+    printf("Your grade is %c\n",grade);
 
 switch(grade)
 {
-    case 0:
+    case 'A':
     printf("Excellent Work");
     break;
-    case 1:
-    printf("\nWell done");
+    case 'B':
+    printf("Well done");
     break;
-    case 2:
+    case 'C':
     printf("Good job");
     break;
-    case 3:
+    case 'D':
     printf("You passed, but you could do better");
     break;
-    case 4:
+    case 'E':
     printf("Sorry, you failed");
     break;
 }
+ //3 
+    if (grade == 'A' || grade == 'B' || grade == 'C' || grade == 'D')
+    {
+        printf(" \nyou are eligible for next level");
+    }
+    else
+    {
+        printf("\nyou are not eligible for next level");
+    }
 }
