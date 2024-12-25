@@ -1,17 +1,10 @@
-{
-  int m,n,o;
-  m = 50;
-  n = 20;
-  
-
-  o = m;
-  m = n;
-  n = m;
-  printf("The value of m and n is %d\t%d",o,m);
-
-
-
-
-
-
-}
+//1 find third triangle 
+    int a,b,sum,ans;
+    printf("Enter the value of first angle:");
+    scanf("%d",&a);
+     printf("Enter the value of second angle:");
+    scanf("%d",&b);
+    sum=a+b;
+    ans=180-sum;
+    printf("Third angle is %d",ans);
+    
